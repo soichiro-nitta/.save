@@ -1,0 +1,28 @@
+[user]
+	name = soichiro-nitta
+	email = soic1226@gmail.com
+[alias]
+	a = add
+	s = status
+	sw = switch
+	l = log --oneline
+	c = commit
+	ch = checkout
+	ps = push
+	pl = pull
+	m = merge
+	b = branch
+	d = diff
+	rs = reset
+	rst = restore
+	rb = rebase
+[core]
+	ignorecase = false
+	excludesfile = /Users/soichiro/.gitignore
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[credential]
+	helper = netlify
