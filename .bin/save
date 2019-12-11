@@ -1,0 +1,21 @@
+#!/bin/sh
+
+vimrc="${HOME}/.vimrc ${HOME}/.save/"
+cocSettings="${HOME}/.vim/coc-settings.json ${HOME}/.save/.vim/"
+tmuxConf="${HOME}/.tmux.conf ${HOME}/.save/"
+configFish="${HOME}/.config/fish/config.fish ${HOME}/.save/.config/fish/"
+fishFile="${HOME}/.config/fish/fishfile ${HOME}/.save/.config/fish/"
+fishUserKeyBindingsFish="${HOME}/.config/fish/functions/fish_user_key_bindings.fish ${HOME}/.save/.config/fish/functions/"
+gitconfig="${HOME}/.gitconfig ${HOME}/.save/"
+bin="${HOME}/.bin ${HOME}/.save/"
+
+cp $vimrc
+cp $cocSettings
+cp $tmuxConf
+cp $configFish
+cp $fishFile
+cp $fishUserKeyBindingsFish
+cp $gitconfig
+cp -r $bin
+
+echo "copied!"

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if [ $# = 0 ]; then
+  tree -a -L 1
+else
+  tree -a -L $1
+fi
