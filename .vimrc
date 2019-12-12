@@ -30,5 +30,6 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'leafgarland/typescript-vim'
+Plug 'cohama/lexima.vim'
 call plug#end()
 
