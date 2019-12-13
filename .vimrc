@@ -28,6 +28,11 @@ nmap <Leader>p "+p
 nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
+
+"貼り付けた複数行のテキストの末尾へ自動的に移動する
+vmap <silent> y y`]
+vmap <silent> p p`]
+nmap <silent> p p`]
 colorscheme zellner
 
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
