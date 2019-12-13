@@ -33,6 +33,11 @@ vmap <Leader>P "+P
 vmap <silent> y y`]
 vmap <silent> p p`]
 nmap <silent> p p`]
+
+"範囲拡大を使う
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
+
 colorscheme zellner
 
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
@@ -46,5 +51,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'leafgarland/typescript-vim'
 Plug 'cohama/lexima.vim'
+Plug 'terryma/vim-expand-region'
 call plug#end()
 
