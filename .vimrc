@@ -21,6 +21,13 @@ let mapleader = "\<Space>" "LeaderをSpaceキーにする
 nmap <Leader>w :w<CR> "<Space>wを押してファイルを保存する
 "imap <C-j> <ESC> "<Space>jでエスケープ
 
+"<Space>pと<Space>yでクリップボードにコピー＆ペースト
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
 colorscheme zellner
 
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
