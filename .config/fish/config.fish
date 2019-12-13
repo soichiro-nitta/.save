@@ -1,4 +1,3 @@
-fish_vi_key_bindings
 balias g git
 balias v vim
 balias y yarn
