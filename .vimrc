@@ -18,6 +18,9 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 let mapleader = "\<Space>" "LeaderをSpaceキーにする
+nmap <Leader>w :w<CR> "<Space>wを押してファイルを保存する
+"imap <C-j> <ESC> "<Space>jでエスケープ
+
 colorscheme zellner
 
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
