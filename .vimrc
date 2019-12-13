@@ -44,6 +44,17 @@ autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
 autocmd ColorScheme * hi statusline cterm=NONE ctermfg=white ctermbg=NONE "ステータスラインの色を上書き
 autocmd ColorScheme * hi MatchParen cterm=bold ctermfg=200 ctermbg=NONE "対応する括弧の色を上書き
 
+" 貼り付け時にペーストバッファが上書きされないようにする
+function! RestoreRegister()
+  let @" = s:restore_reg
+  return ''
+endfunction
+function! s:Repl()
+  let s:restore_reg = @"
+  return "p@=RestoreRegister()\<cr>"
+endfunction
+vmap <silent> <expr> p <sid>Repl()
+
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
