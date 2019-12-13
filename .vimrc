@@ -17,6 +17,7 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+let mapleader = "\<Space>" "LeaderをSpaceキーにする
 colorscheme zellner
 
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
